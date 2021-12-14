@@ -21,6 +21,16 @@ jump right in to Electron development.
 The `master` branch is a rewrite of Electron Forge that will eventually be the 6.x series. If you
 are looking for the 5.x series (the version currently published to NPM under `electron-forge`), please view the [5.x branch](https://github.com/electron-userland/electron-forge/tree/5.x).
 
+Note that the 5.x branch uses a very old version of electron by default. To switch from the `electron-forge` package installed by npm to the this 6.0 version, you can do the following:
+
+```bash
+npm remove -g electron-forge
+npm install -g "@electron-forge/cli"
+electron-forge --version
+```
+
+If you haven't yet installed the old version, no need to remove it. If you already have a project using the older version, you may have to make minor adjustments.
+
 ---
 
 [Website](https://www.electronforge.io) |
